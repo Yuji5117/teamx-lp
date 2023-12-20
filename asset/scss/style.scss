@@ -4,7 +4,11 @@
 @use "./foundation/base";
 @use "./foundation/variable";
 
+/*--------------------------------------*
+  * layout
+  *--------------------------------------*/
+@use "./layout/header";
+
 .section_container {
   height: 100vh;
 }
-
