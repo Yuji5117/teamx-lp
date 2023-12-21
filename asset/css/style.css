@@ -130,4 +130,52 @@ li {
 .p-concept__content p {
   font-size: 1.6rem;
   line-height: 2;
+}
+
+.p-service {
+  width: 100%;
+  height: 100vh;
+}
+.p-service__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.p-service__title-container {
+  display: flex;
+}
+.p-service__title h1 {
+  font-size: 8.6rem;
+}
+.p-service__title h2 {
+  font-size: 2.8rem;
+}
+.p-service__content {
+  display: flex;
+  justify-content: space-between;
+}
+.p-service__item-container {
+  background-color: #e6e4e4;
+  max-width: 280px;
+  padding: 15px;
+}
+.p-service__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-service__description {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.p-service__description h3 {
+  font-size: 2rem;
+}
+.p-service__description p {
+  font-size: 1.4rem;
+  line-height: 2;
 }/*# sourceMappingURL=style.css.map */

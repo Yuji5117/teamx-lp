@@ -1,0 +1,61 @@
+.p-service {
+  width: 100%;
+  height: 100vh;
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title-container {
+    display: flex;
+  }
+
+  &__title {
+    h1 {
+      font-size: 8.6rem;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-container {
+    background-color: #e6e4e4;
+    max-width: 280px;
+    padding: 15px;
+  }
+
+  &__item {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__description {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h3 {
+      font-size: 2.0rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 2;
+    }
+  }
+}
