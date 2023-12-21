@@ -178,4 +178,35 @@ li {
 .p-service__description p {
   font-size: 1.4rem;
   line-height: 2;
+}
+
+.p-contact {
+  width: 100%;
+}
+.p-contact__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.p-contact__title-container {
+  display: flex;
+  padding-bottom: 60px;
+}
+.p-contact__title h1 {
+  font-size: 8.6rem;
+}
+.p-contact__title h2 {
+  font-size: 2.8rem;
+}
+.p-contact__content {
+  display: flex;
+  justify-content: center;
+}
+.p-contact__anchor {
+  border: solid 3px #333;
+  padding: 10px 50px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.7;
 }/*# sourceMappingURL=style.css.map */

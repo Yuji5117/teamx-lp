@@ -1,0 +1,38 @@
+.p-contact {
+  width: 100%;
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  &__title-container {
+    display: flex;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    h1 {
+      font-size: 8.6rem;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__anchor {
+    border: solid 3px #333;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.7;
+  }
+}
