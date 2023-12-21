@@ -1,8 +1,14 @@
 $color-base: #fff;
 
 $color-gray: #efefef;
-$color-black: #333;
+$color-black: #000;
 
-$opacity-level: 0.5; // 50% opacity
+$opacity-level: 0; // 50% opacity
 
 $transparent-white: rgba(255, 255, 255, $opacity-level);
+
+$text-base: "1.6rem";
+$text-s: "1.4rem";
+$text-l: "1.8rem";
+$text-xs: "1.2rem";
+$text-xl: "2.4rem";

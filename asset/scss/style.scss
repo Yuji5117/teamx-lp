@@ -8,6 +8,15 @@
   * layout
   *--------------------------------------*/
 @use "./layout/header";
+@use "./layout/footer";
+
+/*--------------------------------------*
+  * object
+  *--------------------------------------*/
+/*-------------------
+  * component
+  -------------------*/
+@use "./object/component/inner";
 
 .section_container {
   height: 100vh;

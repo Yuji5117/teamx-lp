@@ -1,0 +1,28 @@
+@import "../foundation/variable";
+
+.l-footer {
+  width: 100%;
+  background-color: $color-black;
+
+  &__content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__lists {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__list {
+    color: $color-base;
+    font-size: 1.4rem;
+
+    a {
+      color: $color-base;
+    }
+  }
+}

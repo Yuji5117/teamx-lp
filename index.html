@@ -13,17 +13,19 @@
   </head>
   <body>
     <header class="l-header">
-      <nav aria-label="メインナビゲーション">
-        <ul>
-          <li><a href="#concept">企業理念</a></li>
-          <li><a href="#service">事業内容</a></li>
-          <li><a href="#works">実績</a></li>
-          <li>Logo</li>
-          <li><a href="#message">代表挨拶</a></li>
-          <li><a href="#company_info">会社概要</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
-        </ul>
-      </nav>
+      <div class="c-inner">
+        <nav class="l-header__nav" aria-label="メインナビゲーション">
+          <ul class="l-header__content">
+            <li><a href="#concept">企業理念</a></li>
+            <li><a href="#service">事業内容</a></li>
+            <li><a href="#works">実績</a></li>
+            <li><div>Logo</div></li>
+            <li><a href="#message">代表挨拶</a></li>
+            <li><a href="#company_info">会社概要</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="hero" class="section_container">
@@ -168,30 +170,39 @@
         <a href="">メールでのお問い合せはこちら</a>
       </section>
     </main>
-    <footer>
-      <div class="footer_container">
-        <div>
-          <ul>
-            <li><a href="#hero">トップページ</a></li>
-            <li><a href="#concept">企業理念</a></li>
-            <li><a href="#service">事業内容</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><a href="#message">代表挨拶</a></li>
-            <li><a href="#company_info">会社概要</a></li>
-            <li><a href="#contact">お問い合わせ</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>株式会社 TEAM-X</li>
-            <li>
-              〒530-0001 大阪市北区梅田一丁目1番3号大阪駅前第3ビル29階 1-1-1号室
-            </li>
-            <li>メールアドレス daisuke.aota@team-x.co.jp</li>
-          </ul>
+    <footer class="l-footer">
+      <div class="c-inner">
+        <div class="l-footer__content">
+          <div>
+            <ul class="l-footer__lists">
+              <li class="l-footer__list"><a href="#hero">トップページ</a></li>
+              <li class="l-footer__list"><a href="#concept">企業理念</a></li>
+              <li class="l-footer__list"><a href="#service">事業内容</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="l-footer__lists">
+              <li class="l-footer__list"><a href="#message">代表挨拶</a></li>
+              <li class="l-footer__list">
+                <a href="#company_info">会社概要</a>
+              </li>
+              <li class="l-footer__list">
+                <a href="#contact">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="l-footer__lists">
+              <li class="l-footer__list"> 株式会社 TEAM-X</li>
+              <li class="l-footer__list">
+                〒530-0001 大阪市北区梅田一丁目1番3号大阪駅前第3ビル29階
+                1-1-1号室
+              </li>
+              <li class="l-footer__list">
+                メールアドレス daisuke.aota@team-x.co.jp
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
