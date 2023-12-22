@@ -1,6 +1,7 @@
 .p-works {
   width: 100%;
-  background-color: #e6e4e4;
+  background-image: url("../img/section_background.jpg");
+  background-size: cover;
 
   &__container {
     max-width: 1000px;

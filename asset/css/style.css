@@ -108,6 +108,8 @@ li {
 .p-concept {
   width: 100%;
   height: 100vh;
+  background-image: url("../img/section_background.jpg");
+  background-size: cover;
 }
 .p-concept__container {
   max-width: 1000px;
@@ -190,7 +192,8 @@ li {
 
 .p-works {
   width: 100%;
-  background-color: #e6e4e4;
+  background-image: url("../img/section_background.jpg");
+  background-size: cover;
 }
 .p-works__container {
   max-width: 1000px;
