@@ -234,6 +234,29 @@ li {
   font-size: 1.4rem;
 }
 
+.p-message {
+  width: 100%;
+  height: 100vh;
+}
+.p-message__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.p-message__title-container {
+  display: flex;
+}
+.p-message__title h1 {
+  font-size: 8.6rem;
+}
+.p-message__title h2 {
+  font-size: 2.8rem;
+}
+.p-message__content {
+  display: flex;
+}
 .p-contact {
   width: 100%;
 }
