@@ -105,6 +105,21 @@ li {
   justify-content: center;
   align-items: center;
 }
+.p-hero__container {
+  display: flex;
+}
+.p-hero__image {
+  width: 400px;
+  display: block;
+}
+.p-hero__company-name {
+  font-size: 2.4rem;
+  padding-bottom: 10px;
+}
+.p-hero__title {
+  font-size: 5.2rem;
+  line-height: 1.8;
+}
 
 .p-concept {
   width: 100%;
