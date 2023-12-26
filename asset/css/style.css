@@ -90,6 +90,21 @@ li {
 .l-footer__list a {
   color: #fff;
 }
+@media screen and (max-width: 767px) {
+  .l-footer__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .l-footer__nav {
+    display: none;
+  }
+  .l-footer__lists :first-child {
+    font-size: 2.4rem;
+  }
+  .l-footer__list {
+    font-size: 1.2rem;
+  }
+}
 
 /*--------------------------------------*
   * object
@@ -453,4 +468,17 @@ li {
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: 0.7;
+}
+
+/*-------------------
+  * util
+  -------------------*/
+.u-sp-br {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .u-sp-br {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

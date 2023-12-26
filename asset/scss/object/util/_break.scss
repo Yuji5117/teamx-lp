@@ -1,0 +1,11 @@
+@import "../../foundation/mixin";
+
+.u-sp-br {
+  display: none;
+}
+
+@include mq(sp) {
+  .u-sp-br {
+    display: block;
+  }
+}

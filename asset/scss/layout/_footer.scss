@@ -1,4 +1,5 @@
 @import "../foundation/variable";
+@import "../foundation/mixin";
 
 .l-footer {
   width: 100%;
@@ -23,6 +24,27 @@
 
     a {
       color: $color-base;
+    }
+  }
+
+  @include mq(sp) {
+    &__content {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__lists {
+      :first-child {
+        font-size: 2.4rem;
+      }
+    }
+
+    &__list {
+      font-size: 1.2rem;
     }
   }
 }
