@@ -6,6 +6,7 @@ html {
   font-size: 10px;
   line-height: 1.6;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 a {
@@ -24,9 +25,8 @@ a {
 body {
   font-size: 1.6rem;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  min-width: 350px;
-  width: 100%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 img {
@@ -128,6 +128,11 @@ li {
   font-size: 5.2rem;
   line-height: 1.8;
 }
+@media screen and (max-width: 767px) {
+  .p-hero__container {
+    flex-direction: column;
+  }
+}
 
 .p-concept {
   width: 100%;
@@ -168,7 +173,6 @@ li {
 
 .p-service {
   width: 100%;
-  height: 100vh;
   padding: 0 20px;
 }
 .p-service__container {
@@ -223,6 +227,15 @@ li {
   border-bottom: 2px solid #000;
   margin-right: 10px;
 }
+@media screen and (max-width: 767px) {
+  .p-service__content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .p-service__item-container {
+    max-width: 100%;
+  }
+}
 
 .p-works {
   width: 100%;
@@ -273,7 +286,6 @@ li {
   height: 100vh;
 }
 .p-message__container {
-  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
