@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*--------------------------------------*
  * foundation
  *--------------------------------------*/
@@ -365,6 +364,7 @@ li {
 
 .p-company-info {
   width: 100%;
+  height: 100vh;
   padding: 0 20px;
 }
 .p-company-info__container {
@@ -400,44 +400,29 @@ li {
   width: 75%;
   border-bottom: 2px solid #a3a2a2;
 }
-
-.company-info-container {
-  width: 100%;
-  max-width: 800px; /* または画像に合わせて適切な幅に設定 */
-  margin: 0 auto; /* 中央揃え */
+@media screen and (max-width: 767px) {
+  .p-company-info .p-company-info {
+    height: auto;
+  }
+  .p-company-info__row th,
+  .p-company-info__row td {
+    font-size: 1.4rem;
+    padding: 12px 10px;
+  }
+  .p-company-info__heading {
+    width: 30%;
+  }
+  .p-company-info__detail {
+    width: 70%;
+    font-weight: bold;
+  }
 }
 
-.company-info-table {
-  width: 100%;
-  border-collapse: collapse;
+@media screen and (max-width: 767px) {
+  .p-company-info {
+    height: auto;
+  }
 }
-
-.company-info-row th,
-.company-info-row td {
-  border-bottom: 1px solid #000; /* 横線を表示 */
-  text-align: left; /* 左揃え */
-  padding: 12px; /* スペースを設定 */
-  vertical-align: top; /* 上部にテキストを揃える */
-}
-
-.info-title {
-  font-weight: bold; /* タイトルを太字に */
-  width: 25%; /* タイトルの幅を設定 */
-}
-
-.info-content {
-  width: 75%; /* 内容の幅を設定 */
-}
-
-.business-activities {
-  list-style: none; /* リストのスタイルをなしに */
-  padding-left: 0; /* 左のパディングを削除 */
-}
-
-.activity-item:not(:last-child) {
-  padding-bottom: 4px; /* アイテム間のスペースを設定 */
-}
-
 .p-contact {
   width: 100%;
 }
