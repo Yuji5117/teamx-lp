@@ -131,6 +131,16 @@ li {
 @media screen and (max-width: 767px) {
   .p-hero__container {
     flex-direction: column;
+    align-items: center;
+  }
+  .p-hero__company-name {
+    font-size: 1.8rem;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .p-hero__title {
+    font-size: 2.8rem;
+    margin: 0;
   }
 }
 
