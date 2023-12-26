@@ -29,8 +29,23 @@
   }
 
   &__profile-img {
+    width: 50%;
+    img {
+      display: block;
+      width: 460px;
+    }
   }
 
   &__detail {
+    width: 50%;
+  }
+
+  &__name {
+    font-size: 4.6rem;
+    span {
+      padding-right: 30px;
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
   }
 }

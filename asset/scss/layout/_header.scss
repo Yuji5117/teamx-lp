@@ -2,6 +2,8 @@
 
 .l-header {
   width: 100%;
+  // TODO: 相談
+  // position: fixed;
   position: absolute;
   top: 0;
   left: 0;
@@ -18,5 +20,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__item {
+    a {
+      font-weight: bold;
+    }
+  }
+
+  &__divider {
+    height: 24px;
+    width: 3px;
+    background-color: #000;
   }
 }

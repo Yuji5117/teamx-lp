@@ -59,6 +59,14 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+.l-header__item a {
+  font-weight: bold;
+}
+.l-header__divider {
+  height: 24px;
+  width: 3px;
+  background-color: #000;
+}
 
 .l-footer {
   width: 100%;
@@ -273,6 +281,25 @@ li {
 .p-message__content {
   display: flex;
 }
+.p-message__profile-img {
+  width: 50%;
+}
+.p-message__profile-img img {
+  display: block;
+  width: 460px;
+}
+.p-message__detail {
+  width: 50%;
+}
+.p-message__name {
+  font-size: 4.6rem;
+}
+.p-message__name span {
+  padding-right: 30px;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
 .p-company-info {
   width: 100%;
   height: 100vh;
