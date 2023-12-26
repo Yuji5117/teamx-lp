@@ -180,6 +180,22 @@ li {
   font-size: 1.6rem;
   line-height: 2;
 }
+@media screen and (max-width: 767px) {
+  .p-concept__content {
+    gap: 30px;
+  }
+  .p-concept__content h3 {
+    margin: 0;
+    font-size: 2.8rem;
+  }
+  .p-concept__content p {
+    width: 100%;
+    margin: 0;
+    font-size: 1.4rem;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
 
 .p-service {
   width: 100%;
