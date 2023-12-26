@@ -31,7 +31,7 @@
 
   &__item-container {
     background-color: #e6e4e4;
-    max-width: 280px;
+    max-width: 300px;
     padding: 15px;
   }
 
@@ -50,12 +50,23 @@
     gap: 10px;
 
     h3 {
-      font-size: 2.0rem;
+      font-size: 2.2rem;
     }
 
     p {
       font-size: 1.4rem;
       line-height: 2;
+      font-weight: bold;
+    }
+  }
+
+  &__description-title {
+    font-size: 2rem;
+
+    span {
+      font-size: 3.2rem;
+      border-bottom: 2px solid #000;
+      margin-right: 10px;
     }
   }
 }
