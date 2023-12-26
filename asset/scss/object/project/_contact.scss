@@ -1,3 +1,5 @@
+@import "../../foundation/mixin";
+
 .p-contact {
   width: 100%;
 
@@ -34,5 +36,13 @@
     font-size: 3rem;
     font-weight: 500;
     letter-spacing: 0.7;
+  }
+
+  @include mq(sp) {
+    &__anchor {
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 10px 30px;
+    }
   }
 }
