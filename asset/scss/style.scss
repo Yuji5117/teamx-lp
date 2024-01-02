@@ -9,6 +9,7 @@
   * layout
   *--------------------------------------*/
 @use "./layout/header";
+@use "./layout/contact-form-header";
 @use "./layout/footer";
 
 /*--------------------------------------*
@@ -29,6 +30,7 @@
 @use "./object/project/message";
 @use "./object/project/company-info";
 @use "./object/project/contact";
+@use "./object/project/contact-form";
 
 /*-------------------
   * util

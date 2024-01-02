@@ -1,0 +1,64 @@
+@import "../../foundation/mixin";
+
+.p-contact-form {
+  background: #fff;
+  width: 100%;
+
+  &__form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px 10px;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  &__required-mark {
+    color: #ff0000;
+    margin-left: 5px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+    :hover {
+      background: #555;
+    }
+  }
+}
