@@ -197,10 +197,13 @@ li {
   justify-content: end;
 }
 .p-concept__title h1 {
-  font-size: 8.6rem;
+  font-size: 16rem;
+  letter-spacing: 1.2rem;
+  color: #fff;
 }
 .p-concept__title h2 {
-  font-size: 2.8rem;
+  font-size: 3.8rem;
+  color: #fff;
 }
 .p-concept__content {
   display: flex;
