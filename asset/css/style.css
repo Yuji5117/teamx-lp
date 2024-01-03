@@ -240,7 +240,7 @@ li {
   line-height: 1;
 }
 .c-section-title__sub {
-  font-size: clamp(1.4rem, 10vw, 3.8rem);
+  font-size: clamp(1.4rem, 6vw, 3.8rem);
 }
 
 /*-------------------
@@ -300,17 +300,11 @@ li {
 .p-concept__title-container {
   display: flex;
   justify-content: end;
-  padding-top: 30px;
-  padding-bottom: 35px;
 }
 .p-concept__title h1 {
-  font-size: clamp(5.5rem, 10vw, 16rem);
-  letter-spacing: 1.2rem;
-  line-height: 1;
   color: #fff;
 }
 .p-concept__title h2 {
-  font-size: clamp(1.4rem, 10vw, 3.8rem);
   color: #fff;
 }
 .p-concept__content {
