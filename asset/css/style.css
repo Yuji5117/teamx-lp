@@ -414,12 +414,17 @@ li {
 }
 .p-works__title h1 {
   font-size: 8.6rem;
+  color: #fff;
+  -webkit-text-stroke: 0.5px #000;
 }
 .p-works__title h2 {
   font-size: 2.8rem;
+  -webkit-text-stroke: 0.5px #000;
+  color: #fff;
 }
 .p-works__content {
   width: 100%;
+  padding: 0 30px;
   margin-inline: auto;
   position: relative;
 }
@@ -443,6 +448,22 @@ li {
   font-size: 1.6rem;
   line-height: 1.4;
   color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .p-works__item p {
+    padding-top: 15px;
+    padding-bottom: 8px;
+    font-size: 0.6rem;
+    line-height: 2;
+  }
+  .p-works__item-heading {
+    height: 35px;
+  }
+  .p-works__item-heading h3 {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #fff;
+  }
 }
 
 .swiper {
@@ -493,6 +514,26 @@ li {
   bottom: -40px !important;
 }
 
+@media screen and (max-width: 767px) {
+  .swiper {
+    height: auto;
+  }
+  .swiper-wrapper {
+    height: 100px !important;
+  }
+  .swiper-slide {
+    padding: 8px;
+  }
+  .swiper-pagination-bullets {
+    display: none;
+  }
+  .swiper-button-prev {
+    left: -4px !important;
+  }
+  .swiper-button-next {
+    right: -4px !important;
+  }
+}
 .p-message {
   width: 100%;
 }

@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
   slidesPerView: 2,
-  spaceBetween: 40,
+  spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 2500,
@@ -9,6 +9,7 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     768: {
       slidesPerView: 3,
+      spaceBetween: 40,
     },
   },
   pagination: {
