@@ -14,16 +14,6 @@
     padding-bottom: 60px;
   }
 
-  &__title {
-    h1 {
-      font-size: 8.6rem;
-    }
-
-    h2 {
-      font-size: 2.8rem;
-    }
-  }
-
   &__content {
     display: flex;
     justify-content: center;
@@ -39,6 +29,11 @@
   }
 
   @include mq(sp) {
+    &__title-container {
+      text-align: end;
+      padding-bottom: 40px;
+    }
+
     &__anchor {
       font-size: 1.8rem;
       font-weight: bold;

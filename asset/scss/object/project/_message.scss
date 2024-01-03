@@ -18,16 +18,6 @@
     display: flex;
   }
 
-  &__title {
-    h1 {
-      font-size: 8.6rem;
-    }
-
-    h2 {
-      font-size: 2.8rem;
-    }
-  }
-
   &__content {
     display: flex;
   }
@@ -64,6 +54,9 @@
   }
 
   @include mq(sp) {
+    &__title-container {
+      text-align: end;
+    }
     &__detail {
       width: 100%;
       display: flex;

@@ -429,12 +429,10 @@ li {
   display: flex;
 }
 .p-works__title h1 {
-  font-size: 8.6rem;
   color: #fff;
   -webkit-text-stroke: 0.5px #000;
 }
 .p-works__title h2 {
-  font-size: 2.8rem;
   -webkit-text-stroke: 0.5px #000;
   color: #fff;
 }
@@ -466,6 +464,9 @@ li {
   color: #fff;
 }
 @media screen and (max-width: 767px) {
+  .p-works__title-container {
+    text-align: end;
+  }
   .p-works__item p {
     padding-top: 15px;
     padding-bottom: 8px;
@@ -565,12 +566,6 @@ li {
 .p-message__title-container {
   display: flex;
 }
-.p-message__title h1 {
-  font-size: 8.6rem;
-}
-.p-message__title h2 {
-  font-size: 2.8rem;
-}
 .p-message__content {
   display: flex;
 }
@@ -603,6 +598,9 @@ li {
   width: 55%;
 }
 @media screen and (max-width: 767px) {
+  .p-message__title-container {
+    text-align: end;
+  }
   .p-message__detail {
     width: 100%;
     display: flex;
@@ -656,12 +654,13 @@ li {
 
 .p-company-info {
   width: 100%;
-  padding: 0 20px;
   background-color: #e6e4e4;
 }
 .p-company-info__container {
   max-width: 1000px;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 80px;
   display: flex;
   flex-direction: column;
@@ -672,12 +671,10 @@ li {
   justify-content: end;
 }
 .p-company-info__title h1 {
-  font-size: 8.6rem;
   color: #fff;
   -webkit-text-stroke: 0.5px #000;
 }
 .p-company-info__title h2 {
-  font-size: 2.8rem;
   color: #fff;
   -webkit-text-stroke: 0.5px #000;
 }
@@ -719,6 +716,10 @@ li {
   .p-company-info {
     height: auto;
   }
+  .p-company-info__title-container {
+    justify-content: start;
+    text-align: end;
+  }
 }
 .p-contact {
   width: 100%;
@@ -731,12 +732,6 @@ li {
 .p-contact__title-container {
   display: flex;
   padding-bottom: 60px;
-}
-.p-contact__title h1 {
-  font-size: 8.6rem;
-}
-.p-contact__title h2 {
-  font-size: 2.8rem;
 }
 .p-contact__content {
   display: flex;
@@ -751,6 +746,10 @@ li {
   letter-spacing: 0.7;
 }
 @media screen and (max-width: 767px) {
+  .p-contact__title-container {
+    text-align: end;
+    padding-bottom: 40px;
+  }
   .p-contact__anchor {
     font-size: 1.8rem;
     font-weight: bold;

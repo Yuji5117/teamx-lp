@@ -2,12 +2,13 @@
 
 .p-company-info {
   width: 100%;
-  padding: 0 20px;
   background-color: #e6e4e4;
 
   &__container {
     max-width: 1000px;
     margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -21,13 +22,11 @@
 
   &__title {
     h1 {
-      font-size: 8.6rem;
       color: #fff;
       -webkit-text-stroke: 0.5px #000;
     }
 
     h2 {
-      font-size: 2.8rem;
       color: #fff;
       -webkit-text-stroke: 0.5px #000;
     }
@@ -82,5 +81,16 @@
 @include mq(sp) {
   .p-company-info {
     height: auto;
+
+    &__title-container {
+      justify-content: start;
+      text-align: end;
+    }
+
+    // &__title {
+    //   h2 {
+    //     text-align: end;
+    //   }
+    // }
   }
 }

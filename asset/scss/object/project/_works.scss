@@ -20,15 +20,11 @@
 
   &__title {
     h1 {
-      font-size: 8.6rem;
       color: #fff;
       -webkit-text-stroke: 0.5px #000;
-      // text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      //   1px 1px 0 #000;
     }
 
     h2 {
-      font-size: 2.8rem;
       -webkit-text-stroke: 0.5px #000;
       color: #fff;
     }
@@ -67,6 +63,10 @@
   }
 
   @include mq(sp) {
+    &__title-container {
+      text-align: end;
+    }
+
     &__item {
       p {
         padding-top: 15px;
