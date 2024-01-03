@@ -720,8 +720,9 @@ li {
 }
 .p-company-info__row th,
 .p-company-info__row td {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 12px 40px;
+  letter-spacing: 0.2rem;
 }
 .p-company-info__heading {
   width: 25%;
@@ -739,6 +740,7 @@ li {
   .p-company-info__row td {
     font-size: 1.4rem;
     padding: 12px 10px;
+    letter-spacing: 0;
   }
   .p-company-info__heading {
     width: 30%;
