@@ -1,10 +1,18 @@
 @import "../../foundation/mixin";
 
+.u-pc-br {
+  display: block;
+}
+
 .u-sp-br {
   display: none;
 }
 
 @include mq(sp) {
+  .u-pc-br {
+    display: none;
+  }
+
   .u-sp-br {
     display: block;
   }

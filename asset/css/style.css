@@ -853,11 +853,18 @@ li {
 /*-------------------
   * util
   -------------------*/
+.u-pc-br {
+  display: block;
+}
+
 .u-sp-br {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
+  .u-pc-br {
+    display: none;
+  }
   .u-sp-br {
     display: block;
   }
