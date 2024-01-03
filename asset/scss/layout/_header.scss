@@ -5,7 +5,7 @@
   width: 100%;
   // TODO: 相談
   // position: fixed;
-  // position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: $transparent-white;
@@ -77,7 +77,7 @@
       display: block;
       width: 50px;
       height: 50px;
-      background-color: #ccc;
+      background-color: $color-gray-light;
       position: fixed;
       top: 20px;
       right: 15px;
@@ -85,7 +85,7 @@
 
       &.active {
         .l-header__menu-icon {
-          background-color: #ccc;
+          background-color: $color-gray-light;
         }
 
         ::before {
@@ -120,15 +120,19 @@
       align-items: start;
       gap: 25px 0;
       padding-top: 70px;
-      padding-left: 70px;
+      padding-left: 50px;
       z-index: 100;
       transition: 0.4s;
     }
 
     &__item {
       a {
-        color: #fff;
-        font-size: 2.4rem;
+        color: $color-base;
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+        font-weight: normal;
+        padding-bottom: 3px;
+        border-bottom: 1px solid $color-base;
       }
     }
 

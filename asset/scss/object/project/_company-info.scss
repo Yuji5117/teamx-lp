@@ -1,8 +1,9 @@
 @import "../../foundation/mixin";
+@import "../../foundation/variable";
 
 .p-company-info {
   width: 100%;
-  background-color: #e6e4e4;
+  background-color: $color-gray-light;
 
   &__container {
     max-width: 1000px;
@@ -22,13 +23,13 @@
 
   &__title {
     h1 {
-      color: #fff;
-      -webkit-text-stroke: 0.5px #000;
+      color: $color-base;
+      -webkit-text-stroke: 0.5px $color-black;
     }
 
     h2 {
-      color: #fff;
-      -webkit-text-stroke: 0.5px #000;
+      color: $color-base;
+      -webkit-text-stroke: 0.5px $color-black;
     }
   }
 
@@ -46,7 +47,7 @@
 
   &__heading {
     width: 25%;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid $color-black;
   }
 
   &__detail {
@@ -86,11 +87,5 @@
       justify-content: start;
       text-align: end;
     }
-
-    // &__title {
-    //   h2 {
-    //     text-align: end;
-    //   }
-    // }
   }
 }

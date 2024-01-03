@@ -1,4 +1,5 @@
 @import "../../foundation/mixin";
+@import "../../foundation/variable";
 
 .p-concept {
   width: 100%;
@@ -21,11 +22,11 @@
 
   &__title {
     h1 {
-      color: #fff;
+      color: $color-base;
     }
 
     h2 {
-      color: #fff;
+      color: $color-base;
     }
   }
 

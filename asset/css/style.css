@@ -50,6 +50,7 @@ li {
   *--------------------------------------*/
 .l-header {
   width: 100%;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0);
@@ -108,14 +109,14 @@ li {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #ccc;
+    background-color: #e6e6e6;
     position: fixed;
     top: 20px;
     right: 15px;
     z-index: 100;
   }
   .l-header__menu-toggle.active .l-header__menu-icon {
-    background-color: #ccc;
+    background-color: #e6e6e6;
   }
   .l-header__menu-toggle.active ::before {
     top: 0;
@@ -140,13 +141,17 @@ li {
     align-items: start;
     gap: 25px 0;
     padding-top: 70px;
-    padding-left: 70px;
+    padding-left: 50px;
     z-index: 100;
     transition: 0.4s;
   }
   .l-header__item a {
     color: #fff;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    font-weight: normal;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #fff;
   }
   .l-header__logo-item {
     display: none;
@@ -232,15 +237,27 @@ li {
   }
 }
 .c-section-title {
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .c-section-title__main {
-  font-size: clamp(5.5rem, 10vw, 16rem);
+  font-size: clamp(6.2rem, 10vw, 16rem);
+  letter-spacing: 1.6rem;
+  color: #666;
   line-height: 1;
 }
 .c-section-title__sub {
-  font-size: clamp(1.4rem, 6vw, 3.8rem);
+  font-size: clamp(1.2rem, 6vw, 3.8rem);
+  letter-spacing: 0.6rem;
+  color: #666;
+}
+@media screen and (max-width: 767px) {
+  .c-section-title__main {
+    letter-spacing: 1rem;
+  }
+  .c-section-title__sub {
+    letter-spacing: 0.2rem;
+  }
 }
 
 /*-------------------
@@ -255,9 +272,11 @@ li {
 }
 .p-hero__container {
   display: flex;
+  align-items: center;
+  gap: 70px;
 }
 .p-hero__image {
-  width: 400px;
+  width: clamp(280px, 10vw, 400px);
   display: block;
 }
 .p-hero__company-name {
@@ -272,6 +291,7 @@ li {
   .p-hero__container {
     flex-direction: column;
     align-items: center;
+    gap: 70px;
   }
   .p-hero__company-name {
     font-size: 1.8rem;
@@ -650,7 +670,7 @@ li {
 
 .p-company-info {
   width: 100%;
-  background-color: #e6e4e4;
+  background-color: #e6e6e6;
 }
 .p-company-info__container {
   max-width: 1000px;
@@ -774,21 +794,21 @@ li {
   font-weight: bold;
 }
 .p-contact-form__required-mark {
-  color: #ff0000;
+  color: #e6e6e6;
   margin-left: 5px;
 }
 .p-contact-form__input {
   width: 100%;
   padding: 10px;
   margin-bottom: 25px;
-  border: 1px solid #ddd;
+  border: 1px solid #e6e6e6;
   border-radius: 5px;
 }
 .p-contact-form__textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #e6e6e6;
   border-radius: 5px;
   resize: vertical;
 }
