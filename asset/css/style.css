@@ -230,6 +230,18 @@ li {
     padding: 0 30px;
   }
 }
+.c-section-title {
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+.c-section-title__main {
+  font-size: clamp(5.5rem, 10vw, 16rem);
+  line-height: 1;
+}
+.c-section-title__sub {
+  font-size: clamp(1.4rem, 10vw, 3.8rem);
+}
+
 /*-------------------
   * project
   -------------------*/
@@ -336,11 +348,11 @@ li {
 
 .p-service {
   width: 100%;
-  padding: 0 20px;
   margin-bottom: 60px;
 }
 .p-service__container {
   max-width: 1000px;
+  padding: 0 40px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -348,12 +360,6 @@ li {
 }
 .p-service__title-container {
   display: flex;
-}
-.p-service__title h1 {
-  font-size: 8.6rem;
-}
-.p-service__title h2 {
-  font-size: 2.8rem;
 }
 .p-service__content {
   display: flex;
@@ -394,6 +400,9 @@ li {
   margin-right: 10px;
 }
 @media screen and (max-width: 767px) {
+  .p-service__title-container {
+    text-align: end;
+  }
   .p-service__content {
     flex-direction: column;
     gap: 30px;

@@ -2,11 +2,11 @@
 
 .p-service {
   width: 100%;
-  padding: 0 20px;
   margin-bottom: 60px;
 
   &__container {
     max-width: 1000px;
+    padding: 0 40px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -15,16 +15,6 @@
 
   &__title-container {
     display: flex;
-  }
-
-  &__title {
-    h1 {
-      font-size: 8.6rem;
-    }
-
-    h2 {
-      font-size: 2.8rem;
-    }
   }
 
   &__content {
@@ -36,9 +26,6 @@
     background-color: #e6e4e4;
     max-width: 300px;
     padding: 15px;
-  }
-
-  &__item {
   }
 
   &__image {
@@ -76,6 +63,9 @@
   }
 
   @include mq(sp) {
+    &__title-container {
+      text-align: end;
+    }
     &__content {
       flex-direction: column;
       gap: 30px;

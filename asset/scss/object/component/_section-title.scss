@@ -1,0 +1,13 @@
+.c-section-title {
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  &__main {
+    font-size: clamp(5.5rem, 10vw, 16rem);
+    line-height: 1;
+  }
+
+  &__sub {
+    font-size: clamp(1.4rem, 10vw, 3.8rem);
+  }
+}
