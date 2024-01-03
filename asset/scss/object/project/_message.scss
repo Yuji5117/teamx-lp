@@ -16,6 +16,7 @@
 
   &__title-container {
     display: flex;
+    text-align: end;
   }
 
   &__content {
@@ -54,9 +55,6 @@
   }
 
   @include mq(sp) {
-    &__title-container {
-      text-align: end;
-    }
     &__detail {
       width: 100%;
       display: flex;

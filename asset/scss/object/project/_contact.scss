@@ -11,12 +11,13 @@
 
   &__title-container {
     display: flex;
-    padding-bottom: 60px;
+    text-align: end;
   }
 
   &__content {
     display: flex;
     justify-content: center;
+    padding-top: 60px;
   }
 
   &__anchor {
@@ -29,9 +30,10 @@
   }
 
   @include mq(sp) {
-    &__title-container {
-      text-align: end;
-      padding-bottom: 40px;
+    &__content {
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
     }
 
     &__anchor {

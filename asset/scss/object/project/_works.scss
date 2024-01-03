@@ -16,6 +16,7 @@
 
   &__title-container {
     display: flex;
+    justify-content: end;
   }
 
   &__title {
@@ -64,6 +65,7 @@
 
   @include mq(sp) {
     &__title-container {
+      justify-content: start;
       text-align: end;
     }
 

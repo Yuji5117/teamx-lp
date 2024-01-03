@@ -347,7 +347,6 @@ li {
 }
 .p-service__container {
   max-width: 1000px;
-  padding: 0 40px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -355,6 +354,7 @@ li {
 }
 .p-service__title-container {
   display: flex;
+  text-align: end;
 }
 .p-service__content {
   display: flex;
@@ -395,8 +395,9 @@ li {
   margin-right: 10px;
 }
 @media screen and (max-width: 767px) {
-  .p-service__title-container {
-    text-align: end;
+  .p-service__container {
+    padding-right: 40px;
+    padding-left: 40px;
   }
   .p-service__content {
     flex-direction: column;
@@ -422,6 +423,7 @@ li {
 }
 .p-works__title-container {
   display: flex;
+  justify-content: end;
 }
 .p-works__title h1 {
   color: #fff;
@@ -460,6 +462,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .p-works__title-container {
+    justify-content: start;
     text-align: end;
   }
   .p-works__item p {
@@ -560,6 +563,7 @@ li {
 }
 .p-message__title-container {
   display: flex;
+  text-align: end;
 }
 .p-message__content {
   display: flex;
@@ -593,9 +597,6 @@ li {
   width: 55%;
 }
 @media screen and (max-width: 767px) {
-  .p-message__title-container {
-    text-align: end;
-  }
   .p-message__detail {
     width: 100%;
     display: flex;
@@ -726,11 +727,12 @@ li {
 }
 .p-contact__title-container {
   display: flex;
-  padding-bottom: 60px;
+  text-align: end;
 }
 .p-contact__content {
   display: flex;
   justify-content: center;
+  padding-top: 60px;
 }
 .p-contact__anchor {
   border: solid 3px #333;
@@ -741,9 +743,10 @@ li {
   letter-spacing: 0.7;
 }
 @media screen and (max-width: 767px) {
-  .p-contact__title-container {
-    text-align: end;
-    padding-bottom: 40px;
+  .p-contact__content {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
   }
   .p-contact__anchor {
     font-size: 1.8rem;
