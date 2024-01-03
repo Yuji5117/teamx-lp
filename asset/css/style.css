@@ -657,9 +657,13 @@ li {
 }
 .p-company-info__title h1 {
   font-size: 8.6rem;
+  color: #fff;
+  -webkit-text-stroke: 0.5px #000;
 }
 .p-company-info__title h2 {
   font-size: 2.8rem;
+  color: #fff;
+  -webkit-text-stroke: 0.5px #000;
 }
 .p-company-info__table {
   width: 100%;
