@@ -56,6 +56,7 @@ li {
   z-index: 1;
 }
 .l-header__menu-toggle {
+  display: none;
   cursor: pointer;
 }
 .l-header__menu-icon {
