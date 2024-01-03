@@ -42,7 +42,7 @@
   @include mq(sp) {
     &__content {
       padding-top: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 30px;
     }
 
     &__nav {
@@ -62,7 +62,7 @@
     &__x-logo {
       position: absolute;
       right: -4rem;
-      bottom: 9px;
+      bottom: 19px;
 
       a {
         font-size: 1rem;

@@ -216,7 +216,7 @@ li {
 @media screen and (max-width: 767px) {
   .l-footer__content {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   .l-footer__nav {
     display: none;
@@ -230,7 +230,7 @@ li {
   .l-footer__x-logo {
     position: absolute;
     right: -4rem;
-    bottom: 9px;
+    bottom: 19px;
   }
   .l-footer__x-logo a {
     font-size: 1rem;
