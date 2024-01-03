@@ -2,13 +2,14 @@
 
 .p-company-info {
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   padding: 0 20px;
   background-color: #e6e4e4;
 
   &__container {
     max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
     gap: 40px;
