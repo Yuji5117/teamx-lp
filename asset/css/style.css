@@ -287,14 +287,17 @@ li {
 .p-concept__title-container {
   display: flex;
   justify-content: end;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 .p-concept__title h1 {
-  font-size: 16rem;
+  font-size: clamp(5.5rem, 10vw, 16rem);
   letter-spacing: 1.2rem;
+  line-height: 1;
   color: #fff;
 }
 .p-concept__title h2 {
-  font-size: 3.8rem;
+  font-size: clamp(1.4rem, 10vw, 3.8rem);
   color: #fff;
 }
 .p-concept__content {
@@ -311,17 +314,21 @@ li {
   line-height: 2;
 }
 @media screen and (max-width: 767px) {
+  .p-concept__title-container {
+    justify-content: start;
+    text-align: end;
+  }
   .p-concept__content {
     gap: 30px;
   }
   .p-concept__content h3 {
     margin: 0;
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   .p-concept__content p {
     width: 100%;
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-left: 45px;
     padding-right: 45px;
   }
