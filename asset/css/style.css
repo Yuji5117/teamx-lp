@@ -186,10 +186,12 @@ li {
   background-color: #000;
 }
 .l-footer__content {
+  width: 90%;
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .l-footer__lists {
   display: flex;
@@ -203,6 +205,14 @@ li {
 .l-footer__list a {
   color: #fff;
 }
+.l-footer__x-logo {
+  position: absolute;
+  right: -12rem;
+  bottom: 30px;
+}
+.l-footer__logo-image {
+  width: 8.5rem;
+}
 @media screen and (max-width: 767px) {
   .l-footer__content {
     padding-top: 20px;
@@ -212,10 +222,21 @@ li {
     display: none;
   }
   .l-footer__lists :first-child {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
   .l-footer__list {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .l-footer__x-logo {
+    position: absolute;
+    right: -4rem;
+    bottom: 9px;
+  }
+  .l-footer__x-logo a {
+    font-size: 1rem;
+  }
+  .l-footer__logo-image {
+    width: 4.5rem;
   }
 }
 

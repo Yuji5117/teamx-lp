@@ -6,10 +6,12 @@
   background-color: $color-black;
 
   &__content {
+    width: 90%;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 
   &__lists {
@@ -27,6 +29,16 @@
     }
   }
 
+  &__x-logo {
+    position: absolute;
+    right: -12rem;
+    bottom: 30px;
+  }
+
+  &__logo-image {
+    width: 8.5rem;
+  }
+
   @include mq(sp) {
     &__content {
       padding-top: 20px;
@@ -39,12 +51,26 @@
 
     &__lists {
       :first-child {
-        font-size: 2.4rem;
+        font-size: 1.6rem;
       }
     }
 
     &__list {
-      font-size: 1.2rem;
+      font-size: 1rem;
+    }
+
+    &__x-logo {
+      position: absolute;
+      right: -4rem;
+      bottom: 9px;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+
+    &__logo-image {
+      width: 4.5rem;
     }
   }
 }
