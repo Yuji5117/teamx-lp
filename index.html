@@ -14,20 +14,27 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="l-header">
       <div class="c-inner">
         <nav class="l-header__nav" aria-label="メインナビゲーション">
+          <div class="l-header__menu-toggle">
+            <div class="l-header__menu-icon"></div>
+          </div>
           <ul class="l-header__content">
             <li class="l-header__item"><a href="#concept">企業理念</a></li>
             <li class="l-header__divider"></li>
             <li class="l-header__item"><a href="#service">事業内容</a></li>
             <li class="l-header__divider"></li>
             <li class="l-header__item"><a href="#works">実績</a></li>
-            <li>
+            <li class="l-header__logo-item">
               <a href="/#hero"
-                ><img src="./asset/img/header_logo.png" alt="" width="200"
+                ><img
+                  src="./asset/img/header_logo.png"
+                  alt="ヘッダーロゴ"
+                  class="l-header__nav-logo"
               /></a>
             </li>
             <li class="l-header__item"><a href="#message">代表挨拶</a></li>
@@ -488,5 +495,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slide.js"></script>
+    <script src="./js/menu-toggle.js"></script>
   </body>
 </html>

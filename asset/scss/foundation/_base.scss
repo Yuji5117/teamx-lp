@@ -1,3 +1,5 @@
+@import "./mixin";
+
 html {
   font-size: 10px;
   line-height: 1.6;
@@ -39,4 +41,10 @@ img {
 
 li {
   list-style: none;
+}
+
+@include mq(sp) {
+  body {
+    position: relative;
+  }
 }
