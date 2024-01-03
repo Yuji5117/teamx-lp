@@ -1,9 +1,13 @@
+@import "../../foundation/mixin";
+
 .p-message {
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
 
   &__container {
     max-width: 1100px;
+    padding: 0 40px;
+    padding-bottom: 60px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -28,6 +32,12 @@
     display: flex;
   }
 
+  @include mq(sp) {
+    &__content {
+      flex-direction: column;
+    }
+  }
+
   &__profile-img {
     width: 45%;
     img {
@@ -38,20 +48,42 @@
     }
   }
 
+  @include mq(sp) {
+    &__profile-img {
+      width: 100%;
+      img {
+        margin: 0 auto;
+        width: 65%;
+        height: 280px;
+      }
+    }
+  }
+
   &__detail {
     width: 55%;
   }
 
-  &__name {
+  @include mq(sp) {
+    &__detail {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px 0;
+    }
+  }
+
+  &__name-container {
     font-size: 5.2rem;
     padding-bottom: 20px;
     letter-spacing: 0.2em;
-    span {
-      padding-right: 30px;
-      letter-spacing: 0;
-      font-size: 1.6rem;
-      font-weight: normal;
-    }
+  }
+
+  &__role {
+    padding-right: 30px;
+    letter-spacing: 0;
+    font-size: 1.6rem;
+    font-weight: normal;
   }
 
   &__detail-title {
@@ -62,5 +94,33 @@
   &__detail-content {
     font-size: 1.2rem;
     line-height: 1.8;
+  }
+
+  @include mq(sp) {
+    &__name-container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+    }
+
+    &__role {
+      order: 1;
+      font-size: 1.6rem;
+      letter-spacing: 0.2em;
+    }
+
+    &__name {
+      order: -1;
+      font-size: 4.6rem;
+    }
+
+    &__detail-title {
+      font-size: 1.4rem;
+    }
+
+    &__detail-content {
+      font-size: 1.4rem;
+      line-height: 1.8;
+    }
   }
 }
