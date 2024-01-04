@@ -137,6 +137,7 @@
 @include mq(sp) {
   .swiper {
     height: auto;
+    z-index: 0 !important;
   }
 
   .swiper-wrapper {

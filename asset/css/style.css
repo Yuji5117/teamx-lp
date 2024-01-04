@@ -571,6 +571,7 @@ li {
 @media screen and (max-width: 767px) {
   .swiper {
     height: auto;
+    z-index: 0 !important;
   }
   .swiper-wrapper {
     height: 100px !important;
