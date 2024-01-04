@@ -7,7 +7,7 @@
   background-size: cover;
 
   &__container {
-    max-width: 1150px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -126,11 +126,11 @@
 
 /* 前への矢印 */
 .swiper-button-prev {
-  left: -60px !important;
+  left: -40px !important;
 }
 /* 次への矢印 */
 .swiper-button-next {
-  right: -60px !important;
+  right: -4rem !important;
 }
 /* ページネーション */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
