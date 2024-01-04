@@ -123,13 +123,11 @@
   margin: 0 !important;
 }
 
-/* 前への矢印 */
-.swiper-button-prev {
-  padding-right: 4rem;
-}
-/* 次への矢印 */
+.swiper-button-prev,
 .swiper-button-next {
-  padding-left: 40px;
+  &::after {
+    font-size: 3.2rem !important;
+  }
 }
 /* ページネーション */
 .swiper-pagination-bullets.swiper-pagination-horizontal {

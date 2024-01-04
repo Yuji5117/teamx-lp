@@ -558,14 +558,9 @@ li {
   margin: 0 !important;
 }
 
-/* 前への矢印 */
-.swiper-button-prev {
-  padding-right: 4rem;
-}
-
-/* 次への矢印 */
-.swiper-button-next {
-  padding-left: 40px;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 3.2rem !important;
 }
 
 /* ページネーション */
