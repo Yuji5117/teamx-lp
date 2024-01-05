@@ -7,7 +7,9 @@
   background-size: cover;
 
   &__container {
-    max-width: 1000px;
+    max-width: 1100px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin: 0 auto;
     padding-bottom: 70px;
     display: flex;
@@ -47,6 +49,11 @@
   }
 
   @include mq(sp) {
+    &__container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
     &__title-container {
       justify-content: start;
       text-align: end;
