@@ -8,13 +8,16 @@
   align-items: center;
 
   &__container {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 70px;
   }
 
   &__image {
-    width: clamp(280px, 10vw, 400px);
+    max-width: 560px;
+    // width: clamp(280px, 10vw, 400px);
     display: block;
   }
 
@@ -41,9 +44,20 @@
       margin: 0;
     }
 
+    &__image {
+      max-width: 230px;
+    }
+
     &__title {
       font-size: 2.8rem;
       margin: 0;
     }
   }
+
+  // @include mq(tab) {
+  //   &__title {
+  //     font-size: 3.2rem;
+  //     margin: 0;
+  //   }
+  // }
 }
