@@ -309,14 +309,20 @@ li {
 .p-hero__image {
   max-width: 560px;
   display: block;
+  opacity: 0; /* 初期状態は完全に透明 */
+  animation: fadeIn 5s 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 .p-hero__company-name {
   font-size: 2.4rem;
   padding-bottom: 10px;
+  opacity: 0; /* 初期状態は完全に透明 */
+  animation: fadeInText 5s 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 .p-hero__title {
   font-size: 5.2rem;
   line-height: 1.8;
+  opacity: 0; /* 初期状態は完全に透明 */
+  animation: fadeInText 5s 3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 @media screen and (max-width: 767px) {
   .p-hero__container {
@@ -338,6 +344,19 @@ li {
   }
 }
 
+/* 画像のフェードインアニメーション */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* 最終的な透明度は1 */
+    transform: scale(1.05); /* わずかに拡大 */
+  }
+}
+/* テキストのフェードインアニメーション */
+@keyframes fadeInText {
+  to {
+    opacity: 1; /* 最終的な透明度は1 */
+  }
+}
 .p-concept {
   width: 100%;
   background-image: url("../img/section_background.jpg");
