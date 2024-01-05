@@ -310,7 +310,7 @@ li {
   max-width: 560px;
   display: block;
   opacity: 0; /* 初期状態は完全に透明 */
-  animation: fadeIn 5s 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation: fadeIn 6s 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 .p-hero__company-name {
   font-size: 2.4rem;
