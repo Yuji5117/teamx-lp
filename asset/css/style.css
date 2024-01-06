@@ -900,11 +900,11 @@ li {
   width: 100%;
 }
 .p-complete__section {
-  width: 100%;
-}
-.p-complete__container {
   max-width: 600px;
   margin: 0 auto;
+}
+.p-complete__container {
+  width: 100%;
   padding-top: 120px;
   text-align: center;
 }
@@ -931,11 +931,10 @@ li {
   width: 100%;
 }
 .p-confirm__section {
-  width: 100%;
-}
-.p-confirm__container {
   max-width: 600px;
   margin: 0 auto;
+}
+.p-confirm__container {
   padding-top: 35px;
 }
 .p-confirm__title {
