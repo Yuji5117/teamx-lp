@@ -74,7 +74,7 @@
           id="message"
           class="p-contact-form__textarea"
           name="message"
-          placeholder="お問合わせ内容を入力してください"
+          placeholder="お問い合わせ内容を入力してください"
           rows="5"
           required
         ></textarea>
