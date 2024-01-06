@@ -282,7 +282,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .c-section-title__main {
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
   }
   .c-section-title__sub {
     letter-spacing: 0.2rem;
