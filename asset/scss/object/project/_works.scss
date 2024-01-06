@@ -65,26 +65,30 @@
   }
 
   @include mq(sp) {
+    &__content {
+      padding: 0 20px;
+    }
+
     &__title-container {
       justify-content: start;
       text-align: end;
+    }
+
+    &__item-heading {
+      height: 45px;
+      h3 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        color: $color-base;
+      }
     }
 
     &__item {
       p {
         padding-top: 15px;
         padding-bottom: 8px;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         line-height: 2;
-      }
-    }
-
-    &__item-heading {
-      height: 35px;
-      h3 {
-        font-size: 0.8rem;
-        line-height: 1.4;
-        color: $color-base;
       }
     }
   }
@@ -141,7 +145,7 @@
   }
 
   .swiper-wrapper {
-    height: 100px !important;
+    height: 120px !important;
   }
 
   .swiper-slide {
