@@ -6,7 +6,8 @@
 
   &__container {
     max-width: 1100px;
-    padding: 0 40px;
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 60px;
     margin: 0 auto;
     display: flex;
@@ -39,29 +40,8 @@
     }
   }
 
-  @include mq(sp) {
-    &__profile-img {
-      width: 100%;
-      img {
-        margin: 0 auto;
-        width: 65%;
-        height: 280px;
-      }
-    }
-  }
-
   &__detail {
     width: 55%;
-  }
-
-  @include mq(sp) {
-    &__detail {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px 0;
-    }
   }
 
   &__name-container {
@@ -88,6 +68,28 @@
   }
 
   @include mq(sp) {
+    &__container {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &__profile-img {
+      width: 100%;
+      img {
+        margin: 0 auto;
+        width: 65%;
+        height: 280px;
+      }
+    }
+
+    &__detail {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px 0;
+    }
+
     &__name-container {
       display: flex;
       flex-direction: column;
