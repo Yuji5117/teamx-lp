@@ -19,25 +19,24 @@
     max-width: 560px;
     display: block;
     opacity: 0;
-    filter: blur(10px) brightness(150%);
-    animation: fadeInImage 3s 5s ease-in-out forwards,
-      flicker5 8s linear infinite both;
+    animation: fadeInImage 1s 1.2s ease-in-out forwards,
+      changeOpacityImage 10s 3s infinite, heartbeat 10s 3s ease-in-out infinite;
   }
 
   &__company-name {
     font-size: 2.4rem;
     padding-bottom: 20px;
     opacity: 0;
-    animation: fadeInText 2s 2.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation: fadeInText 1.3s 2.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
 
   &__title {
     font-size: 5.2rem;
     line-height: 1.4;
     opacity: 0;
-    color: #efeded;
+    color: #f6f6f6;
 
-    animation: initialDisplayTitle 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    animation: initialDisplayTitle 0.6s 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
       forwards;
 
     span {
@@ -55,7 +54,7 @@
         color: black;
         opacity: 0;
 
-        animation: colorChange 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s
+        animation: colorChange 0.15s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s
           forwards;
       }
     }
@@ -89,11 +88,86 @@
 @keyframes fadeInImage {
   0% {
     opacity: 0;
-    filter: blur(10px) brightness(150%);
   }
+
+  100% {
+    opacity: 0.03;
+  }
+}
+@keyframes changeOpacityImage {
+  0% {
+    opacity: 0.03;
+  }
+
+  30% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
   100% {
     opacity: 1;
-    filter: blur(0px) brightness(100%);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  55% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  90% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
 }
 
