@@ -547,7 +547,7 @@ li {
 }
 @media screen and (max-width: 767px) {
   .p-works__content {
-    padding: 0 20px;
+    padding: 0 15px;
   }
   .p-works__title-container {
     justify-content: start;
