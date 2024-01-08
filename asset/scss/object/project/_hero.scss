@@ -18,9 +18,9 @@
   &__image {
     max-width: 560px;
     display: block;
-    opacity: 0;
-    animation: fadeInImage 1s 1.2s ease-in-out forwards,
-      changeOpacityImage 10s 3s infinite, heartbeat 10s 3s ease-in-out infinite;
+    animation: heartbeat 10s 5s ease-in-out infinite;
+    // animation: changeOpacityImage 10s 3s infinite,
+    //   heartbeat 10s 3s ease-in-out infinite;
   }
 
   &__company-name {
@@ -84,16 +84,6 @@
   }
 }
 
-// アニメーション
-@keyframes fadeInImage {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0.03;
-  }
-}
 @keyframes changeOpacityImage {
   0% {
     opacity: 0.03;
@@ -138,7 +128,7 @@
     animation-timing-function: ease-out;
   }
   33% {
-    -webkit-transform: scale(0.87);
+    -webkit-transform: scale(0.9);
     transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;

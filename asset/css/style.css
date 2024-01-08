@@ -309,8 +309,7 @@ li {
 .p-hero__image {
   max-width: 560px;
   display: block;
-  opacity: 0;
-  animation: fadeInImage 1s 1.2s ease-in-out forwards, changeOpacityImage 10s 3s infinite, heartbeat 10s 3s ease-in-out infinite;
+  animation: heartbeat 10s 5s ease-in-out infinite;
 }
 .p-hero__company-name {
   font-size: 2.4rem;
@@ -361,14 +360,6 @@ li {
   }
 }
 
-@keyframes fadeInImage {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.03;
-  }
-}
 @keyframes changeOpacityImage {
   0% {
     opacity: 0.03;
@@ -584,6 +575,16 @@ li {
   }
   .p-service__item-container {
     max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-service__item-container {
+    max-width: 350px;
+    padding: 25px 20px;
+  }
+  .p-service__content {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
