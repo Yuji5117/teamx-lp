@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+//クリックジャッキング対策
+header('X-FRAME-OPTIONS: SAMEORIGIN');
+
+// トークン生成
+if (!isset($_SESSION['token'])) {
+    $_SESSION['token'] = sha1(random_bytes(30));
+}
+
+// HTML特殊文字をエスケープする関数
+function escape($str) {
+    return htmlspecialchars($str,ENT_QUOTES,'UTF-8');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -79,6 +96,7 @@
           required
         ></textarea>
 
+        <input type="hidden" name="token" value="<?=$_SESSION['token']?>">
         <div class="p-contact-form__button-container">
           <button type="submit" class="p-contact-form__button">確認画面へ</button>
         </div>

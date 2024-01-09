@@ -1,4 +1,32 @@
 <?php
+session_start();
+
+//クリックジャッキング対策
+header('X-FRAME-OPTIONS: SAMEORIGIN');
+
+// HTML特殊文字をエスケープする関数
+function escape($str) {
+    return htmlspecialchars($str,ENT_QUOTES,'UTF-8');
+}
+
+//前後にある半角全角スペースを削除する関数
+function spaceTrim ($str) {
+    // 行頭
+    $str = preg_replace('/^[ 　]+/u', '', $str);
+    // 末尾
+    $str = preg_replace('/[ 　]+$/u', '', $str);
+    return $str;
+}
+
+//tokenを変数に入れる
+$token = $_POST['token'];
+
+// トークンを確認し、確認画面を表示
+if(!(hash_equals($token, $_SESSION['token']) && !empty($token))) {
+    echo "不正アクセスの可能性があります";
+    exit();
+}
+
 // POSTデータをサニタイズ
 function sanitize($data) {
     return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
@@ -7,11 +35,11 @@ function sanitize($data) {
 // POSTデータが存在するか確認
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $name = sanitize($_POST['name'] ?? '');
-    $email = sanitize($_POST['email'] ?? '');
-    $phone = sanitize($_POST['phone'] ?? '');
-    $address = sanitize($_POST['address'] ?? '');
-    $message = sanitize($_POST['message'] ?? '');
+    $name = $_SESSION["name"];
+    $email = $_SESSION["email"];
+    $phone = $_SESSION["phone"];
+    $address = $_SESSION["address"];
+    $message = $_SESSION["message"];
 
     // メール送信処理
     $to = 'yuji6523ny@gmail.com';
