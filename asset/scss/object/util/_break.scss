@@ -17,3 +17,15 @@
     display: block;
   }
 }
+
+@include mq(tab-s) {
+  .u-tab-s-non-br {
+    display: none;
+  }
+}
+
+@include mq(tab) {
+  .u-tab-non-br {
+    display: none;
+  }
+}
