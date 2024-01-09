@@ -203,7 +203,10 @@ li {
 }
 .l-footer__lists {
   display: flex;
+  height: 100%;
+  align-items: stretch;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 .l-footer__list {
@@ -245,6 +248,12 @@ li {
   }
   .l-footer__logo-image {
     width: 4.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 819px) {
+  .l-footer__x-logo {
+    right: -8rem;
+    bottom: 30px;
   }
 }
 
@@ -356,6 +365,24 @@ li {
   }
   .p-hero__title {
     font-size: 2.8rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 819px) {
+  .p-hero__image {
+    max-width: 200px;
+  }
+  .p-hero__title {
+    font-size: 3.8rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1024px) {
+  .p-hero__image {
+    max-width: 200px;
+  }
+  .p-hero__title {
+    font-size: 3.8rem;
     margin: 0;
   }
 }
@@ -548,7 +575,7 @@ li {
     max-width: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 820px) and (max-width: 1024px) {
   .p-service__item-container {
     max-width: 350px;
     padding: 25px 20px;
@@ -722,11 +749,6 @@ li {
 .p-message__content {
   display: flex;
 }
-@media screen and (max-width: 767px) {
-  .p-message__content {
-    flex-direction: column;
-  }
-}
 .p-message__profile-img {
   width: 45%;
 }
@@ -764,6 +786,9 @@ li {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .p-message__content {
+    flex-direction: column;
+  }
   .p-message__profile-img {
     width: 100%;
   }
@@ -799,6 +824,37 @@ li {
   .p-message__detail-content {
     font-size: 1.4rem;
     line-height: 1.8;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 819px) {
+  .p-message__container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .p-message__profile-img {
+    width: 40%;
+  }
+  .p-message__profile-img img {
+    width: 350px;
+    height: 450px;
+  }
+  .p-message__detail {
+    padding-left: 35px;
+    width: 60%;
+  }
+  .p-message__name-container {
+    font-size: 4.2rem;
+    padding-bottom: 10px;
+  }
+  .p-message__role {
+    padding-right: 10px;
+  }
+  .p-message__detail-title {
+    font-size: 1.4rem;
+    padding-bottom: 8px;
+  }
+  .p-message__detail-content {
+    font-size: 1.1rem;
   }
 }
 

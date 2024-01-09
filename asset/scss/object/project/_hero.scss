@@ -80,6 +80,28 @@
       margin: 0;
     }
   }
+
+  @include mq(tab-s) {
+    &__image {
+      max-width: 200px;
+    }
+
+    &__title {
+      font-size: 3.8rem;
+      margin: 0;
+    }
+  }
+
+  @include mq(tab) {
+    &__image {
+      max-width: 200px;
+    }
+
+    &__title {
+      font-size: 3.8rem;
+      margin: 0;
+    }
+  }
 }
 
 @keyframes heartbeat {

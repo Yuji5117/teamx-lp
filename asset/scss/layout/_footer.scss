@@ -16,7 +16,10 @@
 
   &__lists {
     display: flex;
+    height: 100%;
+    align-items: stretch;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
   }
 
@@ -71,6 +74,13 @@
 
     &__logo-image {
       width: 4.5rem;
+    }
+  }
+
+  @include mq(tab-s) {
+    &__x-logo {
+      right: -8rem;
+      bottom: 30px;
     }
   }
 }
