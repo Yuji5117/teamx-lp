@@ -16,22 +16,20 @@
   }
 
   &__image {
-    max-width: 560px;
+    max-width: 1200px;
     display: block;
-    animation: heartbeat 10s 5s ease-in-out infinite;
-    // animation: changeOpacityImage 10s 3s infinite,
-    //   heartbeat 10s 3s ease-in-out infinite;
+    animation: heartbeat 10s 5s ease-in-out forwards;
   }
 
   &__company-name {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     padding-bottom: 20px;
     opacity: 0;
     animation: fadeInText 1.3s 2.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
 
   &__title {
-    font-size: 5.2rem;
+    font-size: 6.2rem;
     line-height: 1.4;
     opacity: 0;
     color: #f6f6f6;
@@ -84,28 +82,6 @@
   }
 }
 
-@keyframes changeOpacityImage {
-  0% {
-    opacity: 0.03;
-  }
-
-  30% {
-    opacity: 0.5;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  75% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -133,31 +109,11 @@
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  45% {
+  50% {
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-  }
-
-  55% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  75% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-
-  90% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
   }
 }
 
