@@ -94,11 +94,11 @@
 
   @include mq(tab) {
     &__image {
-      max-width: 200px;
+      max-width: 300px;
     }
 
     &__title {
-      font-size: 3.8rem;
+      font-size: 5.2rem;
       margin: 0;
     }
   }
