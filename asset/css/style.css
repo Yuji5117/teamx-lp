@@ -250,7 +250,7 @@ li {
     width: 4.5rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 819px) {
+@media screen and (min-width: 768px) and (max-width: 899px) {
   .l-footer__x-logo {
     right: -8rem;
     bottom: 30px;
@@ -368,7 +368,7 @@ li {
     margin: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 819px) {
+@media screen and (min-width: 768px) and (max-width: 899px) {
   .p-hero__image {
     max-width: 200px;
   }
@@ -377,7 +377,7 @@ li {
     margin: 0;
   }
 }
-@media screen and (min-width: 820px) and (max-width: 1024px) {
+@media screen and (min-width: 900px) and (max-width: 1024px) {
   .p-hero__image {
     max-width: 200px;
   }
@@ -575,7 +575,7 @@ li {
     max-width: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 819px) {
+@media screen and (min-width: 768px) and (max-width: 899px) {
   .p-service__item-container {
     width: 70%;
     padding: 25px 20px;
@@ -851,7 +851,7 @@ li {
     line-height: 1.8;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 819px) {
+@media screen and (min-width: 768px) and (max-width: 899px) {
   .p-message__container {
     padding-right: 40px;
     padding-left: 40px;
